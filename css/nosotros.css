@@ -1,0 +1,151 @@
+:root{
+    --color-primario: #304173;
+    --color-secundario: #F24968;
+    --color-terciario: #F2F2DC;
+    --color-cuaternario: #C4E5F2;
+    --color-quinario: #F28599;
+
+    --font-logo:  "Libre Franklin", system-ui;
+    --font-texto: "Montserrat", sans-serif;
+}
+
+.nosotros-container {
+    width: 1000px; /* Ancho del contenedor */
+    height: 400px; /* Alto del contenedor */
+    background-color: var(--color-primario);
+    border-radius: 15px;
+    padding: 50px;
+    margin: 60px;
+    margin-bottom: 196px;
+}
+
+.foto {
+    width: 150px;
+    height: 150px;
+    background-color: #dee2e6;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+.nombre {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--color-secundario);
+    text-align: center;
+    margin: 10px;
+}
+
+/* Contenedor para alinear la foto y los botones */
+.alineacion-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* BOTON */
+
+/* Estilo personalizado para el botón con color primario */
+.btn-primario {
+    background-color: var(--color-secundario); /* Color de fondo primario */
+    color: var(--color-cuaternario); /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar como bloque en línea */
+    font-size: 16px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    border-radius: 4px; /* Bordes redondeados */
+    margin: 5px; /* Margen entre botones */
+}
+
+/* Estilo personalizado para el botón con color secundario */
+.btn-secundario {
+    background-color: var(--color-secundario); /* Color de fondo secundario */
+    color: var(--color-cuaternario); /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar como bloque en línea */
+    font-size: 16px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    border-radius: 4px; /* Bordes redondeados */
+    margin: 5px; /* Margen entre botones */
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .nosotros-container {
+        width: 90%;
+        height: auto;
+        padding: 40px;
+        margin: 40px auto;
+    }
+
+    .btn-primario, .btn-secundario {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nosotros-container {
+        width: 90%;
+        height: auto;
+        padding: 30px;
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-primario, .btn-secundario {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .alineacion-container {
+        width: 100%;
+        margin-bottom: 20px; /* Espacio entre contenedores */
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .nosotros-container {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foto {
+        width: 100px;
+        height: 100px;
+    }
+
+    .btn-primario, .btn-secundario {
+        padding: 4px 8px;
+        font-size: 10px;
+    }
+
+    .alineacion-container {
+        width: 100%;
+        margin-bottom: 20px; /* Espacio entre contenedores */
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

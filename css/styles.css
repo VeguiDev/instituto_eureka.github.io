@@ -1,0 +1,475 @@
+:root{
+    --color-primario: #304173;
+    --color-secundario: #F24968;
+    --color-terciario: #F2F2DC;
+    --color-cuaternario: #C4E5F2;
+    --color-quinario: #F28599;
+
+    --font-logo:  "Libre Franklin", system-ui;
+    --font-texto: "Montserrat", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+h1 {
+    font-size: 5rem; 
+}
+  
+h2 {
+    font-size: 2rem; 
+}
+  
+h3 {
+    font-size: 2.75rem; 
+}
+  
+h4 {
+    font-size: 1.5rem; 
+}
+  
+h5 {
+    font-size: 1.25rem; 
+}
+  
+h6 {
+    font-size: 1rem; 
+}
+
+
+
+.navbar{
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+}
+
+.navbar-brand{
+    padding-left: 150px;
+}
+
+.navbar-nav{
+    padding-right: 150px;
+
+}
+
+.navbar-custom {
+    justify-content: center;
+  }
+  
+  .navbar-nav {
+    flex-direction: row;
+  }
+  
+  .navbar-nav .nav-item {
+    margin: 0 10px; /* Puedes ajustar este valor para dar más o menos espacio entre los ítems */
+  }
+  
+
+.nav-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-decoration: none;
+    font-family:var(--font-logo);
+    font-size: 32px;
+    line-height: 1;
+}
+
+.img-fluid2 {
+    max-width: 100%;
+    height: 70px;
+}
+
+.navbar .nav-link{
+    color:var(--color-secundario);
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navbar .nav-link:hover{
+    color: var(--color-quinario);
+
+}
+.navbar-toggler{
+    border-color: var(--color-secundario);
+}
+
+/* Clase para el sitio actual */
+.nav-link.current {
+    color: white;
+}
+
+/* Responsive NAV */
+@media (max-width: 992px) {
+    .navbar-brand {
+        padding-left: 20px;
+    }
+
+    .navbar-nav {
+        padding-right: 20px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 5px 0; /* Ajusta el margen entre los ítems en el menú desplegable */
+    }
+
+    .navbar-toggler {
+        display: block;
+        border: none;
+        background: transparent;
+        color: var(--color-secundario);
+        margin-left: auto; /* Mueve el menú hamburguesa a la derecha */
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    .navbar-collapse {
+        flex-grow: 0;
+        justify-content: flex-end;
+    }
+
+    .nav-logo {
+        font-size: 28px; /* Achica un poco el logo */
+    }
+
+    .logo-arriba, .logo-abajo {
+        font-size: 36px; /* Achica un poco el logo */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        padding-left: 10px;
+    }
+
+    .navbar-nav {
+        padding-right: 10px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 5px 0; /* Ajusta el margen entre los ítems en el menú desplegable */
+    }
+
+    .navbar-toggler {
+        display: block;
+        border: none;
+        background: transparent;
+        color: var(--color-secundario);
+        margin-left: auto; /* Mueve el menú hamburguesa a la derecha */
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    .navbar-collapse {
+        flex-grow: 0;
+        justify-content: flex-end;
+    }
+
+    .nav-logo {
+        font-size: 24px; /* Achica un poco más el logo */
+    }
+
+    .logo-arriba, .logo-abajo {
+        font-size: 32px; /* Achica un poco más el logo */
+    }
+}
+
+/* RESPONSIVE NAV */
+
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+    background-image: url();
+}
+
+/* Estilos del footer */
+.custom-footer {
+    background-color: var(--color-primario);
+    padding: 20px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.custom-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.custom-col-9, .custom-col-3 {
+    flex: 1;
+    text-align: center;
+}
+
+.custom-footer-text, .custom-small {
+    color: var(--color-secundario);
+    white-space: nowrap;
+}
+
+.custom-footer-logo {
+    max-width: 100px;
+    margin-left: 30px;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.custom-small {
+    font-size: 0.875rem;
+}
+
+/* Responsive FOOTER */
+  @media (max-width: 768px) {
+    .custom-container {
+        width: 100%;
+    }
+  
+    .custom-row {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .custom-col-9, .custom-col-3 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+  
+    .custom-footer-logo {
+        max-width: 80px;
+        margin-left: 0;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .custom-footer-text, .custom-small {
+        font-size: 0.60rem;
+    }
+  
+    .custom-footer-logo {
+        max-width: 60px;
+    }
+  }
+/* Responsive FOOTER */
+
+/* Logo contenido PAG */
+.text-center1 {
+    padding: 5px;
+    font-size: 42px;
+    font-weight: 900;
+    color: var(--color-secundario);
+    text-transform: uppercase;
+}
+
+.text-center2 {
+    font-size: 42px;
+    font-weight: 450;
+    color: var(--color-secundario);
+    text-transform: uppercase;
+}
+/* Logo contenido PAG */
+
+/* Contenido PAG */
+main {
+    background-color: #F2F2DC;
+}
+
+.container-izq, .container-img {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container-izq {
+    margin-right: 20px;
+    background: var(--color-cuaternario);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-img {
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -150px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 44px;
+}
+
+.content-section2 {
+    margin-top: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+}
+
+.texto {
+    font-size: 14px;
+    font-weight: 450;
+    text-align: left;
+    color: var(--color-primario);
+    font-size: 16px;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+.col-md-6 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.text-center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+.btn-custom {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--color-secundario);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-terciario);
+  color: var(--color-primario);
+}
+
+/* Responsive Inicio */
+@media (max-width: 768px) {
+  .content-section .row {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+  }
+
+  .container-img {
+      margin: 0;
+      padding: 10px;
+      width: 100%;
+  }
+
+  .container-izq {
+      margin: 0;
+      padding: 10px;
+      width: 100%;
+  }
+
+  .texto {
+      width: 100%;
+      padding: 10px;
+  }
+
+  .text-center {
+      width: 100%;
+      padding: 10px;
+  }
+
+  .btn {
+      width: 100%;
+      padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container-img {
+      padding: 5px;
+  }
+
+  .container-izq {
+      padding: 5px;
+  }
+
+  .texto {
+      padding: 5px;
+  }
+
+  .text-center {
+      padding: 5px;
+  }
+
+  .btn {
+      padding: 5px;
+  }
+}
+/* Responsive Inicio */
+/* Contenido PAG */
