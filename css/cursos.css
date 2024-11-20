@@ -1,0 +1,257 @@
+:root {
+  --color-primario: #304173;
+  --color-secundario: #f24968;
+  --color-terciario: #f2f2dc;
+  --color-cuaternario: #c4e5f2;
+  --color-quinario: #f28599;
+  --font-logo: "Libre Franklin", system-ui;
+  --font-texto: "Montserrat", sans-serif;
+}
+
+main {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+}
+
+.courses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.course-card {
+  display: flex;
+  gap: 40px;
+  height: 100%;
+  padding: 25px;
+  border-radius: 12px;
+  background-color: var(--color-primario);
+  position: relative;
+}
+
+.course-card-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.course-card-title {
+  font-size: 36px;
+  color: var(--color-secundario);
+}
+
+.course-card-description {
+  font-size: 18px;
+  color: var(--color-terciario);
+}
+
+.course-card-info {
+  display: flex;
+  gap: 40px;
+}
+
+.course-card-info-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.course-card-info-title {
+  font-size: 24px;
+  color: var(--color-secundario);
+}
+
+.course-card-info-text {
+  font-size: 18px;
+  color: var(--color-terciario);
+}
+
+.course-card-button {
+  width: 318px;
+  height: 50px;
+  background-color: var(--color-secundario);
+  border: none;
+  border-radius: 12px 0 12px 0;
+  font-size: 24px;
+  color: var(--color-terciario);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.tutors-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.tutor-card {
+  flex: 1 1 300px;
+  max-width: 304px;
+  min-height: 760px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  background-color: var(--color-primario);
+  position: relative;
+}
+
+.tutor-card-img {
+  width: 304px;
+  height: 304px;
+  border-radius: 1000px;
+  object-fit: cover;
+}
+
+.tutor-card-content {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tutor-card-title {
+  font-size: 36px;
+  color: var(--color-terciario);
+  text-align: center;
+}
+
+.tutor-card-subtitle {
+  font-size: 24px;
+  color: var(--color-terciario);
+  text-align: center;
+}
+
+.tutor-card-testimonial {
+  font-size: 18px;
+  color: var(--color-terciario);
+  text-align: center;
+}
+
+.tutor-card-button {
+  width: 100%;
+  height: 50px;
+  background-color: var(--color-secundario);
+  border: none;
+  border-radius: 0 0 12px 12px;
+  font-size: 24px;
+  color: var(--color-terciario);
+  position: absolute;
+  bottom: 0;
+}
+
+@media (max-width: 1480px) {
+  .course-card {
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  main {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .course-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .course-card-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .course-card-info {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .courses-list {
+    gap: 20px;
+  }
+
+  .course-card-title {
+    font-size: 28px;
+  }
+
+  .course-card-description,
+  .course-card-info-text {
+    font-size: 16px;
+  }
+
+  .course-card-info-title {
+    font-size: 20px;
+  }
+
+  .tutors-list {
+    justify-content: space-around;
+  }
+
+  .tutor-card {
+    flex: 1 1 100%;
+  }
+
+  .tutor-card-title,
+  .tutor-card-subtitle {
+    font-size: 28px;
+  }
+
+  .tutor-card-testimonial {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .course-card-title {
+    font-size: 24px;
+  }
+
+  .course-card-info-title {
+    font-size: 18px;
+  }
+
+  .course-card-description,
+  .course-card-info-text {
+    font-size: 14px;
+  }
+
+  .tutor-card {
+    width: 100%;
+    min-height: unset;
+    padding-bottom: 50px;
+  }
+
+  .tutor-card-img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+
+  .tutor-card-title,
+  .tutor-card-subtitle {
+    font-size: 20px;
+  }
+
+  .tutor-card-testimonial {
+    font-size: 14px;
+  }
+
+  .tutor-card-button {
+    font-size: 18px;
+  }
+}

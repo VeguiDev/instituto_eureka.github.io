@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instituto Eureka</title>
+  <link rel="icon" href="img/favicon.ico" type="image/png" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/cursos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+  <!-- Fuentes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <!--Barra de navegacion-->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container-fluid justify-content-center">
+        <a class="navbar-brand nav-logo" href="index.html">
+          <img src="img/logo.png" alt="Logo" class="img-fluid2" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+          style="background-color: #ff5200">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link current" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Cursos.html">Cursos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Avances.html">Avances</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="courses-section">
+      <div class="courses-container">
+        <h2 class="courses-title">Nuestros Cursos</h2>
+        <div class="courses-list">
+          <div class="courses-list">
+            <!-- Curso 1: Programación para principiantes -->
+            <div class="course-card">
+              <img src="img/cursos/curso1.jpg" alt="Curso 1" class="course-card-img" />
+              <div class="course-card-content">
+                <h3 class="course-card-title">Programación para principiantes</h3>
+                <p class="course-card-description">
+                  Aprende los conceptos básicos de programación y da tus primeros pasos en
+                  el mundo del desarrollo de software. Ideal para quienes nunca han
+                  programado antes.
+                </p>
+                <div class="course-card-info">
+                  <div class="course-card-info-column">
+                    <div class="course-card-info-item">
+                      <h4 class="course-card-info-title">Duración</h4>
+                      <p class="course-card-info-text">
+                        10 semanas (2 clases por semana).
+                      </p>
+                    </div>
+                    <div class="course-card-info-item">
+                      <h4 class="course-card-info-title">Horarios</h4>
+                      <p class="course-card-info-text">
+                        Martes y jueves - 18:00 a 19:30.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="course-card-info-column">
+                    <div class="course-card-info-item">
+                      <h4 class="course-card-info-title">Nivel</h4>
+                      <p class="course-card-info-text">Básico.</p>
+                    </div>
+                    <div class="course-card-info-item">
+                      <h4 class="course-card-info-title">Costo</h4>
+                      <p class="course-card-info-text">$200 por el curso completo.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="course-card-button">Inscribirme</button>
+            </div>
+
+            <!-- Curso 2: Análisis Matemático -->
+            <div class="course-card">
+              <img src="img/cursos/curso2.jpg" alt="Curso 2" class="course-card-img" />
+              <div class="course-card-content">
+                <h3 class="course-card-title">Análisis Matemático</h3>
+                <p class="course-card-description">
+                  Domina los fundamentos del análisis matemático, incluyendo límites,
+                  derivadas e integrales, con ejercicios prácticos para comprender
+                  conceptos avanzados.
+                </p>
+                <div class="course-card-info">
+                  <div class="course-card-info-column">
+                    <div class="course-card-info-item">
+                      <h4 class="course-card-info-title">Duración</h4>
+                      <p class="course-card-info-text">
+                        12 semanas (3 clases por semana).
+                      </p>
+                    </div>
+                    <div class="course-card-info-item">
+                      <h4 class="course-card-info-title">Horarios</h4>
+                      <p class="course-card-info-text">
+                        Lunes, miércoles y viernes - 17:00 a 18:30.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="course-card-info-column">
+                    <div class="course-card-info-item">
+                      <h4 class="course-card-info-title">Nivel</h4>
+                      <p class="course-card-info-text">Intermedio.</p>
+                    </div>
+                    <div class="course-card-info-item">
+                      <h4 class="course-card-info-title">Costo</h4>
+                      <p class="course-card-info-text">$250 por el curso completo.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="course-card-button">Inscribirme</button>
+            </div>
+
+            <!-- Curso 3: Inglés Básico -->
+            <div class="course-card">
+              <img src="img/cursos/curso3.jpg" alt="Curso 3" class="course-card-img" />
+              <div class="course-card-content">
+                <h3 class="course-card-title">Inglés Básico</h3>
+                <p class="course-card-description">
+                  Mejora tus habilidades en inglés con un enfoque práctico en vocabulario,
+                  gramática y conversación. Perfecto para quienes desean empezar desde
+                  cero.
+                </p>
+                <div class="course-card-info">
+                  <div class="course-card-info-column">
+                    <div class="course-card-info-item">
+                      <h4 class="course-card-info-title">Duración</h4>
+                      <p class="course-card-info-text">
+                        12 semanas (2 clases por semana).
+                      </p>
+                    </div>
+                    <div class="course-card-info-item">
+                      <h4 class="course-card-info-title">Horarios</h4>
+                      <p class="course-card-info-text">
+                        Miércoles y viernes - 19:00 a 20:30.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="course-card-info-column">
+                    <div class="course-card-info-item">
+                      <h4 class="course-card-info-title">Nivel</h4>
+                      <p class="course-card-info-text">Básico.</p>
+                    </div>
+                    <div class="course-card-info-item">
+                      <h4 class="course-card-info-title">Costo</h4>
+                      <p class="course-card-info-text">$220 por el curso completo.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="course-card-button">Inscribirme</button>
+            </div>
+
+            <!-- Curso 4: Lengua de Señas -->
+            <div class="course-card">
+              <img src="img/cursos/curso4.jpg" alt="Curso 4" class="course-card-img" />
+              <div class="course-card-content">
+                <h3 class="course-card-title">Lengua de Señas</h3>
+                <p class="course-card-description">
+                  Perfecciona tus habilidades en lengua de señas con vocabulario avanzado,
+                  gramática y técnicas para mantener conversaciones fluidas.
+                </p>
+                <div class="course-card-info">
+                  <div class="course-card-info-column">
+                    <div class="course-card-info-item">
+                      <h4 class="course-card-info-title">Duración</h4>
+                      <p class="course-card-info-text">10 semanas (1 clase por semana).</p>
+                    </div>
+                    <div class="course-card-info-item">
+                      <h4 class="course-card-info-title">Horarios</h4>
+                      <p class="course-card-info-text">Martes - 16:00 a 18:00.</p>
+                    </div>
+                  </div>
+                  <div class="course-card-info-column">
+                    <div class="course-card-info-item">
+                      <h4 class="course-card-info-title">Nivel</h4>
+                      <p class="course-card-info-text">Intermedio.</p>
+                    </div>
+                    <div class="course-card-info-item">
+                      <h4 class="course-card-info-title">Costo</h4>
+                      <p class="course-card-info-text">$200 por el curso completo.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="course-card-button">Inscribirme</button>
+            </div>
+
+            <!-- Curso 5: Guitarra Criolla -->
+            <div class="course-card">
+              <img src="img/cursos/curso5.jpg" alt="Curso 5" class="course-card-img" />
+              <div class="course-card-content">
+                <h3 class="course-card-title">Guitarra Criolla</h3>
+                <p class="course-card-description">
+                  Aprende a dominar la guitarra criolla desde las bases hasta técnicas
+                  esenciales. Ideal para quienes quieren iniciarse en el mundo de la
+                  música.
+                </p>
+                <div class="course-card-info">
+                  <div class="course-card-info-column">
+                    <div class="course-card-info-item">
+                      <h4 class="course-card-info-title">Duración</h4>
+                      <p class="course-card-info-text">6 semanas (1 clase por semana).</p>
+                    </div>
+                    <div class="course-card-info-item">
+                      <h4 class="course-card-info-title">Horarios</h4>
+                      <p class="course-card-info-text">Sábados - 10:00 a 12:00.</p>
+                    </div>
+                  </div>
+                  <div class="course-card-info-column">
+                    <div class="course-card-info-item">
+                      <h4 class="course-card-info-title">Nivel</h4>
+                      <p class="course-card-info-text">Básico.</p>
+                    </div>
+                    <div class="course-card-info-item">
+                      <h4 class="course-card-info-title">Costo</h4>
+                      <p class="course-card-info-text">$120 por el curso completo.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="course-card-button">Inscribirme</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tutors-section">
+      <div class="tutors-container">
+        <h2 class="tutors-title">Nuestros Tutores</h2>
+        <div class="tutors-list">
+          <!-- Tutor 1: Christian Di Paola -->
+          <div class="tutor-card">
+            <img src="img/Cdp.jpg" alt="Tutor 1" class="tutor-card-img" />
+            <div class="tutor-card-content">
+              <h3 class="tutor-card-title">Christian Di Paola</h3>
+              <h4 class="tutor-card-subtitle">Tutor de Programación</h4>
+              <p class="tutor-card-testimonial">
+                "Christian me ayudó a comprender programación desde cero. Hoy tengo
+                mi primer trabajo como desarrollador junior." - Valeria C.
+              </p>
+            </div>
+            <button class="tutor-card-button">Conocer más</button>
+          </div>
+    
+          <!-- Tutor 2: Gonzalo Navarte -->
+          <div class="tutor-card">
+            <img src="img/gonzalo.jpg" alt="Tutor 2" class="tutor-card-img" />
+            <div class="tutor-card-content">
+              <h3 class="tutor-card-title">Gonzalo Navarte</h3>
+              <h4 class="tutor-card-subtitle">Tutor de Análisis Matemático</h4>
+              <p class="tutor-card-testimonial">
+                "Con su ayuda entendí cálculo y aprobé mi examen. Gonzalo tiene un
+                talento especial para enseñar." - Pedro M.
+              </p>
+            </div>
+            <button class="tutor-card-button">Conocer más</button>
+          </div>
+    
+          <!-- Tutor 3: Juan Manuel Menta -->
+          <div class="tutor-card">
+            <img src="img/juan.png" alt="Tutor 3" class="tutor-card-img" />
+            <div class="tutor-card-content">
+              <h3 class="tutor-card-title">Juan Manuel Menta</h3>
+              <h4 class="tutor-card-subtitle">Tutor de Inglés Básico</h4>
+              <p class="tutor-card-testimonial">
+                "Gracias a Juan Manuel, logré aprobar mi examen de inglés y acceder
+                a una oportunidad laboral mejor." - Juan D.
+              </p>
+            </div>
+            <button class="tutor-card-button">Conocer más</button>
+          </div>
+    
+          <!-- Tutor 4: Lucas Lopez de Calle -->
+          <div class="tutor-card">
+            <img src="img/lucas.png" alt="Tutor 4" class="tutor-card-img" />
+            <div class="tutor-card-content">
+              <h3 class="tutor-card-title">Lucas Lopez de Calle</h3>
+              <h4 class="tutor-card-subtitle">Tutor de Lengua de Señas</h4>
+              <p class="tutor-card-testimonial">
+                "Lucas enseña con dedicación y paciencia. Es inspirador aprender
+                con él." - Ana G.
+              </p>
+            </div>
+            <button class="tutor-card-button">Conocer más</button>
+          </div>
+    
+          <!-- Tutor 5: Máximo Crocce -->
+          <div class="tutor-card">
+            <img src="img/Maximo.png" alt="Tutor 5" class="tutor-card-img" />
+            <div class="tutor-card-content">
+              <h3 class="tutor-card-title">Máximo Crocce</h3>
+              <h4 class="tutor-card-subtitle">Tutor de Guitarra Criolla</h4>
+              <p class="tutor-card-testimonial">
+                "Máximo me ayudó a conectar con mis raíces a través de la música. Una experiencia increíble." - Lucas P.
+              </p>
+            </div>
+            <button class="tutor-card-button">Conocer más</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+  </main>
+
+  <footer class="custom-footer">
+    <div class="custom-container footer-content">
+      <div class="custom-row">
+        <div class="custom-col-9">
+          <p class="custom-footer-text mb-0">
+            Materia: Diseño y Desarrollo Web &nbsp;&nbsp; Curso: 480939
+            &nbsp;&nbsp; Grupo: 9
+          </p>
+          <p class="custom-small mb-0">
+            Todos los Derechos reservados - Sitio desarrollado para uso
+            educativo - 2024
+          </p>
+        </div>
+        <div class="custom-col-3 text-end">
+          <img src="img/LogoUADE.png" alt="UADE Logo" class="custom-footer-logo" />
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
