@@ -320,18 +320,20 @@
       <div class="container-boton">
         <button class="botonpagos" onclick="togglePaymentMethods()">Mostrar Métodos de Pago</button>
         <div class="payment-methods" id="paymentMethods">
-          <!-- Tarjetas -->
-          <i class="far fa-credit-card" id="cc">
-            <span class="tooltip">Tarjeta de Crédito/Debito</span>
-          </i>    
-          <!-- Transferencia -->
-          <i class="fas fa-university" id="bk">
-              <span class="tooltip">Transferencia Bancaria</span>
-          </i>
-          <!-- PayPal -->
-          <i class="fab fa-cc-paypal" id="pp">
-              <span class="tooltip">PayPal</span>
-          </i>
+          <div class="iconospagos">
+            <!-- Tarjetas -->
+            <i class="far fa-credit-card" id="cc" tabindex="0">
+                <span class="tooltip">Tarjeta de Crédito/Debito</span>
+            </i>    
+            <!-- Transferencia -->
+            <i class="fas fa-university" id="bk" tabindex="0">
+                <span class="tooltip">Transferencia Bancaria</span>
+            </i>
+            <!-- PayPal -->
+            <i class="fab fa-cc-paypal" id="pp" tabindex="0">
+                <span class="tooltip">PayPal</span>
+            </i>
+          </div>
         </div>
       </div>
     </section>
