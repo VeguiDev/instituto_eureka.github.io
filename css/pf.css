@@ -1,0 +1,108 @@
+body {
+    line-height: 1.6;
+    margin: 20px;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Principio BOTON */
+
+.container-boton {
+    text-align: center;
+}
+
+.botonpagos {
+    background-color: #304173;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.botonpagos:hover {
+    background-color: #F24968;
+}
+
+.tooltip {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; 
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+i:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+i {
+    position: relative;
+    display: inline-block;
+}
+
+.payment-methods {
+    margin-top: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* FIN BOTON, COMIENZO PF */
+
+.faq-item {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.faq-question:hover {
+    color: #007BFF;
+}
+
+.faq-answer {
+    display: none;
+    padding-left: 20px;
+    color: #333;
+}
+
+.arrow {
+    transition: transform 0.3s;
+}
+
+.arrow.rotate {
+    transform: rotate(180deg);
+}
+
+.faq-container {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.faq-container h3 {
+    margin-top: 20px;
+    margin-bottom: 20px ;
+    font-style: normal;
+}
