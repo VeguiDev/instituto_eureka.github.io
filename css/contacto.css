@@ -14,6 +14,7 @@ body {
 
 .texto h1 {
     font-weight: bold;
+    font-size: 4em;
     color: var(--color-secundario);
 }
 
@@ -24,9 +25,10 @@ body {
 
 .container-1 {
     background-color: var(--color-secundario);
-    color: var(--color-cuaternario);
+    color: white;
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
 }
+
 
