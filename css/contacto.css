@@ -1,0 +1,33 @@
+main {
+    background-image: url("../img/Sprinkle.svg");
+}
+
+body {
+    line-height: 1.6;
+    margin: 20px;
+}
+
+.texto {
+    background-color: var(--color-terciario);
+    color: var(--color-secundario);
+    margin-bottom: 15px;
+}
+
+.texto h1 {
+    font-weight: bold;
+    color: var(--color-secundario);
+}
+
+.pregunta1 {
+    display:none; 
+    margin-left:20px;
+}
+
+.container-1 {
+    background-color: var(--color-secundario);
+    color: var(--color-cuaternario);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
