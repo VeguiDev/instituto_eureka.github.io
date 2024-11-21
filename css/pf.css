@@ -26,6 +26,12 @@ body {
     background-color: #F24968;
 }
 
+.iconospagos {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
 .tooltip {
     visibility: hidden;
     background-color: black;
@@ -35,17 +41,41 @@ body {
     padding: 5px;
     position: absolute;
     z-index: 1;
-    bottom: 125%; 
+    bottom: 125%;
     left: 50%;
-    margin-left: -60px;
+    transform: translateX(-50%);
     opacity: 0;
     transition: opacity 0.3s;
+    width: max-content;
+    max-width: 200px;
+    box-sizing: border-box;
 }
 
-i:hover .tooltip {
+i {
+    position: relative;
+    display: inline-block;
+    margin: 10px; /* Añade espacio entre íconos */
+}
+
+i:hover .tooltip,
+i:focus .tooltip { /* Agrega soporte para focus */
     visibility: visible;
     opacity: 1;
 }
+
+@media (max-width: 600px) {
+    .tooltip {
+        bottom: 100%; /* Ajusta la posición */
+        font-size: 12px; /* Reduce el tamaño de la fuente */
+        padding: 8px; /* Más espacio para clics */
+        max-width: 150px; /* Reduce el ancho */
+    }
+
+    i {
+        margin: 5px; /* Reduce margen entre íconos */
+    }
+}
+
 
 i {
     position: relative;
