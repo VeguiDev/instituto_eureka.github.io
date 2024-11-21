@@ -1,0 +1,83 @@
+:root {
+  --color-primario: #304173;
+  --color-secundario: #f24968;
+  --color-terciario: #f2f2dc;
+  --color-cuaternario: #c4e5f2;
+  --color-quinario: #f28599;
+
+  --font-logo: "Libre Franklin", system-ui;
+  --font-texto: "Montserrat", sans-serif;
+}
+
+.hero-image {
+  background-image: url("../img/baner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-text {
+  color: var(--color-terciario);
+  font-family: var(--font-texto);
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 5rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hero-text span {
+  color: var(--color-secundario);
+}
+
+.sec {
+  margin-top: 30px;
+  font-family: var(--font-logo);
+}
+.sec h2 {
+  font-family: var(--font-logo);
+  font-weight: bold;
+  color: var(--color-primario);
+}
+
+.ladoizquierdo {
+  font-family: var(--font-logo);
+  font-weight: bold;
+  color: var(--color-primario);
+  font-size: 1.2rem;
+}
+
+.tarjetero {
+  max-width: 50%;
+  margin-bottom: 100px;
+  margin-top: 20px;
+}
+.carouselSy {
+  background-color: #304173;
+}
+.fondotarjeta {
+  margin-bottom: 18px;
+}
+
+.tarjeta {
+  font-family: var(--font-logo);
+  font-weight: bold;
+  color: var(--color-terciario);
+  line-height: 1.2rem;
+}
+
+.precio {
+  color: var(--color-secundario);
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 768px) {
+  .tarjetero {
+    max-width: 100%;
+  }
+}
