@@ -144,6 +144,123 @@ main {
   bottom: 0;
 }
 
+/* Estilos para la calculadora */
+.calculator-section {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.calculator-courses-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.calculator-card {
+  position: relative;
+  width: 250px;
+  height: 150px;
+  border: 1px solid var(--color-primario);
+  border-radius: 12px;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: var(--color-cuaternario);
+}
+
+.calculator-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.calculator-checkbox {
+  display: none;
+}
+
+.calculator-checkbox:checked + .calculator-card-label {
+  background-color: var(--color-secundario);
+  color: var(--color-terciario);
+  border-color: var(--color-secundario);
+}
+
+.calculator-card-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
+}
+
+.calculator-card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.calculator-card-cost {
+  font-size: 16px;
+}
+
+.coupon-section {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.coupon-section input[type="text"] {
+  padding: 10px;
+  border: 1px solid var(--color-primario);
+  border-radius: 5px;
+  width: 200px;
+  font-size: 16px;
+  background-color: white; /* Fondo blanco */
+  color: var(--color-primario);
+}
+
+.coupon-section input[type="text"]::placeholder {
+  color: var(--color-quinario);
+}
+
+.coupon-button {
+  padding: 10px 20px;
+  background-color: var(--color-secundario);
+  color: var(--color-terciario);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.coupon-button:hover {
+  background-color: var(--color-quinario);
+}
+
+.calculator-button {
+  padding: 10px 20px;
+  background-color: var(--color-primario);
+  color: var(--color-terciario);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.calculator-button:hover {
+  background-color: var(--color-secundario);
+}
+
+#result {
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+/* Media queries para responsive */
 @media (max-width: 1480px) {
   .course-card {
     padding-bottom: 50px;
@@ -154,6 +271,15 @@ main {
   main {
     padding-left: 50px;
     padding-right: 50px;
+  }
+
+  .calculator-card {
+    width: 200px;
+    height: 130px;
+  }
+
+  .coupon-section input[type="text"] {
+    width: 180px;
   }
 }
 
@@ -176,6 +302,15 @@ main {
   .course-card-info {
     flex-direction: column;
     gap: 20px;
+  }
+
+  .calculator-card {
+    width: 180px;
+    height: 120px;
+  }
+
+  .calculator-card-title {
+    font-size: 16px;
   }
 }
 
@@ -212,6 +347,19 @@ main {
 
   .tutor-card-testimonial {
     font-size: 16px;
+  }
+
+  .calculator-card {
+    width: 160px;
+    height: 100px;
+  }
+
+  .calculator-card-title {
+    font-size: 14px;
+  }
+
+  .coupon-section input[type="text"] {
+    width: 150px;
   }
 }
 
@@ -253,5 +401,18 @@ main {
 
   .tutor-card-button {
     font-size: 18px;
+  }
+  
+  .calculator-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .calculator-card-title {
+    font-size: 14px;
+  }
+
+  .coupon-section input[type="text"] {
+    width: 120px;
   }
 }

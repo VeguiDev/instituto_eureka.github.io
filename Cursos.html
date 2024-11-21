@@ -252,6 +252,118 @@
       </div>
     </section>
 
+    <section class="calculator-section">
+      <h2 class="calculator-title">Calculadora de Presupuesto</h2>
+      <p class="discount-notice">¡Selecciona 3 o más cursos y obtén un 20% de descuento automáticamente!</p>
+      <div class="calculator-courses-container">
+        <!-- Card 1 -->
+        <div class="calculator-card">
+          <input type="checkbox" id="course1" value="200" name="courses" class="calculator-checkbox" />
+          <label for="course1" class="calculator-card-label">
+            <h3 class="calculator-card-title">Programación para principiantes</h3>
+            <p class="calculator-card-cost">Costo: $200</p>
+          </label>
+        </div>
+    
+        <!-- Card 2 -->
+        <div class="calculator-card">
+          <input type="checkbox" id="course2" value="250" name="courses" class="calculator-checkbox" />
+          <label for="course2" class="calculator-card-label">
+            <h3 class="calculator-card-title">Análisis Matemático</h3>
+            <p class="calculator-card-cost">Costo: $250</p>
+          </label>
+        </div>
+    
+        <!-- Card 3 -->
+        <div class="calculator-card">
+          <input type="checkbox" id="course3" value="220" name="courses" class="calculator-checkbox" />
+          <label for="course3" class="calculator-card-label">
+            <h3 class="calculator-card-title">Inglés Básico</h3>
+            <p class="calculator-card-cost">Costo: $220</p>
+          </label>
+        </div>
+    
+        <!-- Card 4 -->
+        <div class="calculator-card">
+          <input type="checkbox" id="course4" value="200" name="courses" class="calculator-checkbox" />
+          <label for="course4" class="calculator-card-label">
+            <h3 class="calculator-card-title">Lengua de Señas</h3>
+            <p class="calculator-card-cost">Costo: $200</p>
+          </label>
+        </div>
+    
+        <!-- Card 5 -->
+        <div class="calculator-card">
+          <input type="checkbox" id="course5" value="120" name="courses" class="calculator-checkbox" />
+          <label for="course5" class="calculator-card-label">
+            <h3 class="calculator-card-title">Guitarra Criolla</h3>
+            <p class="calculator-card-cost">Costo: $120</p>
+          </label>
+        </div>
+      </div>
+    
+      <div class="coupon-section">
+        <label for="coupon">Cupón de descuento:</label>
+        <input type="text" id="coupon" name="coupon" placeholder="Ingrese su cupón" />
+        <button type="button" class="coupon-button" onclick="applyCoupon()">Aplicar</button>
+      </div>
+    
+      <p id="result">Total: $0</p>
+    </section>
+    
+    <script>
+      let couponApplied = false; // Para asegurarse de que el cupón solo se aplique una vez
+    
+      // Actualiza el total al seleccionar/deseleccionar cursos
+      function updateTotal() {
+        const selectedCourses = document.querySelectorAll('input[name="courses"]:checked');
+        let total = 0;
+    
+        // Sumar los valores de los cursos seleccionados
+        selectedCourses.forEach(course => {
+          total += parseFloat(course.value);
+        });
+    
+        // Aplicar descuento del 20% si se seleccionan 3 o más cursos
+        if (selectedCourses.length >= 3) {
+          total *= 0.8; // Descuento del 20%
+        }
+    
+        // Si ya se aplicó el cupón, aplicar el descuento adicional
+        if (couponApplied) {
+          total *= 0.9; // Descuento del 10%
+        }
+    
+        // Mostrar el total actualizado
+        document.getElementById('result').innerText = `Total: $${total.toFixed(2)}`;
+      }
+    
+      // Función para aplicar el cupón
+      function applyCoupon() {
+        const coupon = document.getElementById('coupon').value.trim();
+    
+        if (coupon === 'UADE10OFF') {
+          couponApplied = true;
+          alert('¡Cupón aplicado correctamente!');
+        } else {
+          couponApplied = false;
+          alert('Cupón inválido. Inténtalo nuevamente.');
+        }
+    
+        // Actualizar el total después de aplicar el cupón
+        updateTotal();
+      }
+    
+      // Escuchar cambios en los checkboxes
+      document.querySelectorAll('input[name="courses"]').forEach(course => {
+        course.addEventListener('change', updateTotal);
+      });
+    
+      // Inicializar el total
+      updateTotal();
+    </script>
+    
+
     <section class="tutors-section">
       <div class="tutors-container">
         <h2 class="tutors-title">Nuestros Tutores</h2>
